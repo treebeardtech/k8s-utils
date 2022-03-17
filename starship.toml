@@ -1,0 +1,90 @@
+format = """
+$username\
+$hostname\
+$shlvl\
+$singularity\
+$aws\
+$kubernetes\
+$directory\
+$vcsh\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$cobol\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$gcloud\
+$openstack\
+$azure\
+$env_var\
+$crystal\
+$custom\
+$sudo\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$shell\
+$character"""
+
+[env_var.NODE_ENV]
+format = "NODE_ENV=[$env_value](fg:red) "
+
+[git_branch]
+disabled = false
+
+[gcloud]
+disabled = true
+
+[kubernetes]
+disabled = false
+symbol = "⛵ "
+
+[memory_usage]
+disabled = false
+threshold = 75
+
+[status]
+disabled = false
+
+[python]
+disabled = false
