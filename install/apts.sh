@@ -5,9 +5,7 @@ sudo apt-get update
 sudo apt-get install \
   --yes \
   'xz-utils'
-sudo apt-get install \
-  --no-install-recommends \
-  --yes \
-  'python3-pip'
-sudo apt-get clean
+  
+sh <(curl -L https://nixos.org/nix/install) --no-daemon
+
 sudo rm -rf /var/lib/apt/lists/*
